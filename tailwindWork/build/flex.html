@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <h1 class="text-center">flex basis</h1>
+    <div class="container mx-auto flex flex-row">
+        <div class="basis-1/5 bg-red-500">flex1</div>
+        <div class="basis-1/5 bg-yellow-500">flex2</div>
+        <div class="basis-1/2 bg-green-500">flex3</div>
+    </div>
+    <h1 class="text-center">flex in percentage</h1>
+    <div class="container mx-auto flex flex-row">
+        <div class="bg-blue-700 basis-1/2">flex1</div> 
+        <div class="bg-red-600 basis-1/4">flex2</div> 
+        <div class="bg-pink-600 basis-1/2">flex3</div> 
+    </div>
+    <h1 class="text-center">focus</h1>
+    <div class="container mx-auto flex flex-row">
+        <div class="bg-blue-700 basis-1/5 hover:basis-1/2">flex1</div>
+        <div class="bg-red-600 basis-1/4 hover:basis-1/2">flex2</div>
+        <div class="bg-pink-600 basis-1/5 hover:basis-1/2">flex3</div>
+    </div>
+    <h1 class="text-center">shrink</h1>
+    <div class="container mx-auto flex flex-row">
+        <div class="bg-blue-700 basis-1/2 hover:basis-1/5">flex1</div>
+        <div class="bg-red-600 basis-1/2 hover:basis-1/4">flex2</div>
+        <div class="bg-pink-600 basis-1/2 hover:basis-1/5">flex3</div>
+    </div>
+    <h1 class="text-center">breakpoint and media query</h1>
+    <div class="container mx-auto flex flex-row">
+        <div class="bg-blue-700 md:basis-1/6 sm:basis-1/2">flex1</div>
+        <div class="bg-red-600 basis-1/6 ">flex2</div>
+        <div class="bg-pink-600 basis-1/6 ">flex3</div>
+    </div>
+    <h1 class="text-center">flex direction</h1>
+    <div class="container mx-auto flex flex-row">
+        <div class="bg-blue-700 basis-1/5 hover:basis-1/2">flex1</div>
+        <div class="bg-red-600 basis-1/4 hover:basis-1/2">flex2</div>
+        <div class="bg-pink-600 basis-1/5 hover:basis-1/2">flex3</div>
+    </div>
+    <h1 class="text-center">flex row reverse</h1>
+    <div class="container mx-auto flex flex-row-reverse">
+        <div class="bg-blue-700 basis-1/5 ">flex1</div>
+        <div class="bg-red-600 basis-1/4 ">flex2</div>
+        <div class="bg-pink-600 basis-1/5 ">flex3</div>
+    </div>
+    <h1 class="text-center">flex column</h1>
+    <div class="container mx-auto flex flex-col w-80 gap-4">
+        <div class="bg-blue-700 basis-1/5 mb-4">flex1</div>
+        <div class="bg-red-600 basis-1/4 mb-4">flex2</div>
+        <div class="bg-pink-600 basis-1/5 ">flex3</div>
+    </div>
+    <h1 class="text-center">flex column reverse</h1>
+    <div class="container mx-auto flex flex-col-reverse w-80 gap-4">
+        <div class="bg-blue-700 basis-1/5 ">flex1</div>
+        <div class="bg-red-600 basis-1/4 ">flex2</div>
+        <div class="bg-pink-600 basis-1/5 ">flex3</div>
+    </div>
+    <h1 class="text-center">flex nowrap</h1>
+    <div class="container mx-auto flex flex-nowrap">
+        <div class="bg-blue-700 basis-1/5 ">flex1</div>
+        <div class="bg-red-600 basis-1/4 ">flex2</div>
+        <div class="bg-pink-600 basis-1/5 ">flex3</div>
+    </div>
+    <h1 class="text-center">flex wrap</h1>
+    <div class="container mx-auto flex flex-wrap gap-4">
+        <div class="bg-blue-700 basis-1/4 ">flex1</div>
+        <div class="bg-red-600 basis-1/4 ">flex2</div>
+        <div class="bg-pink-600 basis-1/2 ">flex3</div>
+    </div>
+    <h1 class="text-center">flex wrap reverse</h1>
+    <div class="container mx-auto flex flex-wrap-reverse gap-4">
+        <div class="bg-blue-700 basis-1/4 ">flex1</div>
+        <div class="bg-red-600 basis-1/4 ">flex2</div>
+        <div class="bg-pink-600 basis-1/2 ">flex3</div>
+    </div>
+    <h1 class="text-center">flex</h1>
+    <div class="flex">
+        <div class="bg-blue-500 flex-none h-14 w-14"></div>
+        <div class="bg-red-500 grow h-14 w-14"></div>
+        <div class="bg-pink-500 flex-none h-14 text-center"></div>
+    </div>
+    <br>
+    <h1 class="text-center">flex grow</h1>
+    <div class="flex">
+        <div class="flex-none h-14 w-14 bg:red-500 hover:grow">flex-none</div>
+        <div class="grow h-14 bg-fuchsia-600">grow</div>
+        <div class="flex-none h-14 w-14 bg-slate-500">flex-none</div>
+    </div>
+    <br>
+    <h1>flex grow-reverse</h1>
+    <div class="flex">
+        <div class="grow h-14 bg-red-500 text-center">grow</div>
+        <div class="grow-0 h-14 bg-fuchsia-600">zero</div>
+        <div class="grow h-14 bg-slate-500 text-center">grow</div>
+    </div>
+</body>
+</html>

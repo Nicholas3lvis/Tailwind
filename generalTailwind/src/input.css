@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.gskill-colour{
+    background-color: #516171;
+    color: white;
+}
